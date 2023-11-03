@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glozzom</title>
+  <link rel="stylesheet" href="bootstrap-5.0.2-dist/css/bootstrap.css">
+  <style>
+    .navbar-nav {
+      justify-content: end;
+    }
+
+    .light {
+      background: linear-gradient(#0A0A0B,#0000007a),url('img/lights.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      text-align: center;
+      color: white;
+      padding-top: 5vh;
+      height: 25vh;
+      margin-top: 5vh;
+      margin-bottom: 10vh;
+    }
+
+    .lightdarkbackground {
+      padding-top: 5vh;
+      z-index: 100;
+      height: 100%;
+      opacity: 0.7;
+    }
+
+    .media {
+      background: linear-gradient(#5c5c5c50,#5c5c5c75),url('img/media.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
+      text-align: center;
+      color: white;
+      height: 25vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .lightdarkbackground {
+      padding-top: 5vh;
+      z-index: 100;
+      height: 100%;
+      opacity: 0.7;
+    }
+    .FAQ{
+      padding: 8vh 0;
+      text-align: center;
+      background-color: #343A40;
+      color: white;
+      width: 100%;
+    }
+    hr{
+      color: #0A0A0B;
+      width: 80%;
+      margin-left: 10%;
+    }
+  </style>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #343A40;">
+    <div class="container" style="margin-left: 14%; width: 72%;">
+      <a class="navbar-brand" href="#">Glozzom</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-info" id="navbarNavAltMarkup">
+        <div class="navbar-nav w-100">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link" href="#">About us</a>
+          <a class="nav-link" href="#">Service</a>
+          <a class="nav-link" href="#">Blog</a>
+          <a class="nav-link" href="#">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- slider -->
+  <div id="carouselid" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" style="height: 75vh;">
+      <div class="carousel-item active position-relative h-100">
+        <img src="img/image1.jpg" class="d-block w-100 " alt="...">
+        <div class="carousel-caption  d-block position-absolute " style="text-align: right; top: 25vh;">
+          <h1 style="font-size: 52px;">Heading1</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt, quaerat!</p>
+          <button class="btn btn-danger ">Sign Up Now</button>
+        </div>
+      </div>
+      <div class="carousel-item  position-relative h-100">
+        <img src="img/image2.jpg" class="d-block w-100 " alt="...">
+        <div class="carousel-caption  d-block position-absolute " style="text-align: right; top: 25vh;">
+          <h1>Heading2</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, voluptatum?</p>
+          <button class="btn btn-danger ">Sign Up Now</button>
+        </div>
+      </div>
+      <div class="carousel-item  position-relative h-100">
+        <img src="img/image3.jpg" class="d-block w-100 " alt="...">
+        <div class="carousel-caption  d-block position-absolute " style="text-align: right; top: 25vh;">
+          <h1>Heading3</h1>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae, aliquam.</p>
+          <button class="btn btn-danger ">Sign Up Now</button>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselid" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselid" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    </button>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselid" data-bs-slide-to="0" class="active" aria-current="true"
+        aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselid" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselid" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+  </div>
+  <!-- Features -->
+  <div class="container my-5 py-5" style="margin-left: 14%; width: 72%; text-align: center;">
+    <div class="row">
+      <div class="col">
+        <img src="img/gear.png" alt="" srcset="" class="img-fluid w-25">
+        <h1 class="mt-1">Turning Gear</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, beatae.</p>
+      </div>
+      <div class="col offset-1">
+        <img src="img/cloud.png" alt="" srcset="" class="img-fluid w-25">
+        <h1 class="mt-1">Get Data</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, beatae.</p>
+      </div>
+      <div class="col offset-1">
+        <img src="img/shop.png" alt="" srcset="" class="img-fluid w-25 ">
+        <h1 class="mt-1">Make Money</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, beatae.</p>
+      </div>
+    </div>
+  </div>
+  <!-- start -->
+  <div class="light">
+      <h1>Are you ready to start</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis ipsa laborum eveniet temporibus quos
+        corporis?</p>
+  </div>
+  <!-- lab -->
+  <div class="labtop mt-2">
+    <div class="container">
+      <div class="row my-4 pb-4">
+        <div class="col-5 offset-1  mt-5 pt-5">
+          <h1>Lorem, ipsum.</h1>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus id animi tempore quas quidem illum?</p>
+          <button class="btn btn-outline-danger">Learn More</button>
+        </div>
+        <div class="col-4 offset-1">
+          <img src="img/laptop.png" alt="" srcset="" class="img-fluid w-100">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- media -->
+  <div class="media mb-5">
+      <img src="img/play.png" alt="" srcset="" class="img-fluid" style="width: 3%;margin-bottom: 2vh;">
+      <h2>See What We do</h2>
+  </div>
+  <!-- Gallery -->
+  <div class="gallery">
+    <div class="container my-5" style="text-align: center;">
+    <h1>Photo Gallery</h1>
+    <p>Chekc out our photo</p>
+    <div class="row">
+      <div class="col">
+        <img src="https://images.unsplash.com/photo-1689793067600-736b48e411e6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=560&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5MTQwNzczMg&ixlib=rb-4.0.3&q=80&w=560" alt="" srcset="" class="img-fluid w-100">
+      </div>
+      <div class="col me-3">
+        <img src="https://source.unsplash.com/random/560x560" alt="" srcset="" class="img-fluid w-100">
+      </div>
+      <div class="col me-3">
+        <img src="https://images.unsplash.com/photo-1690148887417-91e785699000?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=560&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5MTQwNzUxNQ&ixlib=rb-4.0.3&q=80&w=560" alt="" srcset="" class="img-fluid w-100">
+      </div>
+    </div>
+    <div class="row my-5">
+      <div class="col">
+        <img src="https://images.unsplash.com/photo-1689214106654-abf1487ceac8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=560&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5MTQwNzY2MQ&ixlib=rb-4.0.3&q=80&w=560" alt="" srcset="" class="img-fluid w-100">
+      </div>
+      <div class="col me-3">
+        <img src="https://images.unsplash.com/photo-1690736159167-b00621eba9f6?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=560&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5MTQwNzcwOA&ixlib=rb-4.0.3&q=80&w=560" alt="" srcset="" class="img-fluid w-100">
+      </div>
+      <div class="col me-3">
+        <img src="https://images.unsplash.com/photo-1690061521963-47eb2380182d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=560&ixid=MnwxfDB8MXxyYW5kb218MHx8fHx8fHx8MTY5MTQwNzYzNw&ixlib=rb-4.0.3&q=80&w=560" alt="" srcset="" class="img-fluid w-100">
+      </div>
+    </div>
+  </div>
+  
+  </div>
+  <!-- FAQ -->
+  <div class="FAQ">
+  <div class="container">
+    <h1>FAQ</h1>
+    <hr>
+    <div class="row">
+      <div class="col-5 offset-1 me-5 pe-2">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item bg-dark ">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" style="background-color: #333333;"
+                aria-controls="flush-collapseOne">
+                Question No.1
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, repudiandae.
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="flush-headingTwo">
+              <button class="accordion-button text-white collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo"
+                style="background-color: #333333;">
+                Question No.2
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, unde..</div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark">
+            <h2 class="accordion-header" id="flush-headingThree">
+              <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree"
+                style="background-color: #333333;">
+                Question.No3
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+              data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo, veritatis!
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-5 me-2">
+        <div class="accordion accordion-flush" id="accordion2">
+          <div class="accordion-item bg-dark">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsefour"  style="background-color: #333333;">
+                Question No.4
+              </button>
+            </h2>
+            <div id="flush-collapsefour" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+              <div class="accordion-body text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                repudiandae.</div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsefive"
+                style="background-color: #333333;">
+                Question No.5
+              </button>
+            </h2>
+            <div id="flush-collapsefive" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+              <div class="accordion-body text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                repudiandae.</div>
+            </div>
+          </div>
+          <div class="accordion-item bg-dark">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed text-white" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapsesix"  style="background-color: #333333;">
+                Question No.6
+              </button>
+            </h2>
+            <div id="flush-collapsesix" class="accordion-collapse collapse" data-bs-parent="#accordion2">
+              <div class="accordion-body text-white">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta,
+                repudiandae.</div>
+            </div>
+          </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  </div>
+    <footer class="bg-dark" style="height: 10vh;background-color: #0A0A0B;">
+      <p class="text-white" style="text-align: center; padding-top: 3vh;">@copyright8-2023</p>
+     </footer>
+
+</body>
+<script src="/bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+
+</html>
